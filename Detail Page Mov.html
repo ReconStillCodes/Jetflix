@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JetFlix Detail Page</title>
+    <link rel="stylesheet" href="Detail Page Mov.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navBarContainer">
+        <img src="Assets/Logo.png" alt="JETFLIX" class="logo">
+
+        
+        <button class="navBarButton nbb-1">
+            <div class="navBarTitle" onclick="link(1)">Home</div>
+            <div class="navBarDec"></div>
+        </button>
+
+        <button class="navBarButton nbb-2" onclick="link(2)">
+            <div class="navBarTitle">Movies</div>
+            <div class="navBarDec"></div>
+        </button>    
+        
+
+
+        <button class="navBarButton nbb-3" onclick="link(3)">
+            <div class="navBarTitle">New & Popular</div>
+            <div class="navBarDec"></div>
+        </button>  
+
+        
+
+        <button class="navBarAccount">
+            <div class="nba-name" id="nba-name">Account</div>
+            <div class="nba-profile">
+                <div class="nba-imgContainer" id="nba-imgContainer">
+                    <!-- <img src="Assets/Male Icon.png" alt=""> -->
+                </div>
+            </div>
+        </button>
+
+    </div>
+
+    <div class="nb-extra"></div>
+
+
+    <!-- Jumbotron -->
+
+    <div class="jumbo">
+        <div class="jumbo-pic-container" id="jumbo-pic-container">
+            <!-- <img src="Poster/Action_X men.jpg" class="jumbo-pic"> 
+            <div class="shadow">
+
+                <div class="mov-title">HELLO</div>
+            
+                <button class="play-but" onclick="playVid()">Play</button>
+            </div>  -->
+        </div>
+    
+    </div>
+
+    <!-- Content -->
+
+    <div class="info">
+        <div class="info-1">
+            <div class="extra">
+                <div class="extra-info" id="year">2012</div>
+                <div class="extra-info" id="duration">1h 20m</div>
+                <div class="extra-info" id="rating">3/10
+                    <img src="Assets/Star Icon.png" class="icon-rating">
+                </div>
+            </div>
+
+
+            <div class="genre" id="genre">Action</div>
+            <div class="sypnosis" id="sypnosis">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae quisquam commodi sed aliquid aliquam aperiam ex, reiciendis pariatur dolorum veniam perferendis dolorem, adipisci deserunt doloribus quaerat tempore ullam voluptate corrupti.
+            </div>
+        </div>
+        
+        
+        <div class="info-2">
+            <div class="info-2-des" id="director">
+                <span class="category">Director: </span> test
+            </div>
+            <div class="info-2-des" id="cast">
+                <span class="category">Cast: </span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora soluta repellendus adipisci dignissimos ducimus corporis ipsa in provident dolor assumenda numquam, eaque eum ipsam officia perspiciatis labore! Dolorum, eum unde.
+            </div>
+
+
+            
+
+            </div>
+        </div>
+    </div>
+    
+    <!-- Movie Container  -->
+    
+    <div class="mov-container">
+        <div class="preview-container">
+            <div class="title-pc">Preview</div>
+            <div class="mov-pc" id="mov-pc">
+                <img src="Preview/Action_X men.jpg" class="mov-mov-pic">
+                <div class="shadow-other">
+                    <button class="play-but-mov" onclick="playPrev()">Play</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="preview-container">
+            <div class="title-pc">More Like This</div>
+
+            <div class="other-container" id="other-container">
+                <!-- <div class="mov-pc" >
+                    <img src="Preview/Action_X men.jpg" class="mov-mov-pic">
+                    <div class="shadow-other">
+                        <div class="mini-title">Title</div>
+                        <button class="play-but-mov">Watch</button>
+                    </div>
+                    
+                </div>    -->
+                
+
+    
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <!-- Video -->
+
+
+    <div class="mov-overlay" onclick="overlayClose()" id="mov-overlay">
+        <video class="mov-main" id="mov-main" controls>
+            <!-- <source src="Clip/Mov_Action_X men.mp4">  -->
+        <video>
+    </div>
+
+    <div class="mov-overlay" onclick="overlayClose()" id="prev-overlay">
+        <video class="mov-main" id="prev-main" controls>
+            <!-- <source src="Clip/Mov_Action_X men.mp4">  -->
+        <video>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer-container"> 
+        <div class="footer-mid">
+            <img src="Assets/Logo.png" class="footer-logo">
+            <div class="footer-bottom">
+                    <div class="footer-extra">
+                        <span>
+                           St. Imam Bonjol No.7, Cibodas, Tangerang, Banten 15138 
+                        </span>
+                        <span>
+                            +62 12345678912
+                        </span>
+                        <div class="footer-icon">
+                            <img src="Assets/footer icon.png" class="footer-icon-img">
+                        </div>
+                        <span id="copyright">
+                            Copyright 2023 © JeTFlix Inc. All rights reserved
+                        </span>
+                        
+                    </div>
+                    <div class="footer-col">
+                        <span>Profile</span>
+                        <span>Privacy</span>
+                        <span>Term of Service</span>
+                    </div>
+                    <div class="footer-col">
+                        <span>Help Center</span>
+                        <span>Jobs</span>
+                        <span>Legal Notices</span>
+                    </div>
+                    <div class="footer-col">
+                        <span>Media</span>
+                        <span>Websites</span>
+                        <span>Forum</span>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+    
+
+
+
+
+
+    <script src="navBar.js"></script>
+    <script src="detailPage.js"></script>
+</body>
+</html>

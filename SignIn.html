@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JetFlix Sign In</title>
+    <link rel="stylesheet" href="SignIn.css">
+</head>
+<body>
+
+    <!-- Sign In -->
+    <div class="flexContainer">
+        <div class="registerContainer">
+            <span  class="title">Log In</span>
+            <span class="title2">Welcome, Enter your details to 
+                                <br> Sign in to your Account</span>
+            
+            
+            <div class="textBox">
+                <span class="subtitle">Username</span>
+                <input type="text" name="name" class="textbox1" id="username">
+            </div>
+
+            <div class="textBox">
+                <span class="subtitle">Password</span>
+                <input type="password" name="name" class="textbox1" id="passcode">
+            </div>
+
+            <div>
+            
+                <button class="button" onclick="checkData()">Sign In</button>  
+       
+                
+            </div>
+
+            <span class="Already">
+                Don't have an Account? 
+                <br><a href="signUp.html" id="link">Sign Up Here</a>
+            </span>
+        </div>
+    </div>
+    
+    <script src="retrieveData.js"></script>
+</body>
+</html>

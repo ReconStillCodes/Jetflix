@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JetFlix Sign Up</title>
+    <link rel="stylesheet" href="SignUp.css">
+</head>
+<body>
+
+    <!-- Sign Up -->
+    <div class="flexContainer">
+        <div class="registerContainer">
+
+            <span  class="title">Sign Up</span>
+
+            
+            <div class="textBox">
+                <span class="subtitle">Name</span>
+                <input type="text" name="name" class="textbox1" id="name">
+            </div>
+
+            <div class="textBox">
+                <span class="subtitle">Email</span>
+                <input type="email" name="Email" class="textbox1" id="email">
+            </div>
+
+
+            <div class="textBox textBox2">
+                <div class="textbox2">
+                    <span class="subtitle">Password</span>
+                    <input type="password" name="Password" class="textbox1" id="password">
+                </div>
+                <div class="textbox2">
+                    <span class="subtitle">Confirm</span>
+                    <input type="password" name="Confirm" class="textbox1" id="confirm">
+                </div>
+             </div>
+
+             <div class="textBox">
+                <span class="subtitle">Birth Date</span>
+                <input type="date" name="date" class="textbox1" id="date">
+            </div>
+
+            <div class="textBox">
+                <span class="subtitle">Gender</span>
+                <div class="genderContainer">
+                    <input type="radio" name="gender" class="radio" id="genderM">
+                    <span class="genderType">Male</span>
+                    <input type="radio" name="gender" class="radio" id="genderF">
+                    <span class="genderType">Female</span>
+                </div>
+            
+            </div>
+
+            <div class="textBox textBox3">
+                <input type="checkbox" class="tick" id="tos">
+                <span>You agree to the Term of Service</span>
+            </div>
+
+            <div>
+                <button class="button" onclick="savingData()">Register</button>  
+ 
+            </div>
+            
+            <span class="Already">Already Have an Account? <br><a href="SignIn.html" id="link">Sign In Here</a></span>
+            
+            
+        </div>
+    </div>
+
+    <script src="accountData.js"></script>
+</body>
+</html>

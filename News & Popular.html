@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JetFlix New & Popular</title>
+    <link rel="stylesheet" href="News & Popular.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navBarContainer">
+        <img src="Assets/Logo.png" alt="JETFLIX" class="logo">
+
+        <button class="navBarButton nbb-1">
+            <div class="navBarTitle" onclick="link(1)">Home</div>
+            <div class="navBarDec"></div>
+        </button>
+
+        <button class="navBarButton nbb-2" onclick="link(2)">
+            <div class="navBarTitle">Movies</div>
+            <div class="navBarDec"></div>
+        </button>
+
+        <button class="navBarButton nbb-3" onclick="link(3)">
+            <div class="navBarTitle">New & Popular</div>
+            <div class="navBarDec"></div>
+        </button>
+
+        <button class="navBarAccount">
+            <div class="nba-name" id="nba-name">Account</div>
+            <div class="nba-profile">
+                <div class="nba-imgContainer" id="nba-imgContainer">
+                    <!-- <img src="Assets/Male Icon.png" alt=""> -->
+                </div>
+            </div>
+        </button>
+
+    </div>
+
+    <div class="nb-extra"></div>
+
+    <!-- Jumbotron -->
+
+    <div class="jumbo">
+        <div class="jumbo-movie">
+            <!-- <video autoplay loop muted class="videoM">
+                <source src="Clip/Action_X men.mp4" type="video/mp4" >
+            </video>  -->
+            <img src="Poster/Action_John wick.jpg" class="videoM">
+
+            <div class="shadow">
+                <div class="shadow-container">
+                    <div class="subtitle">New & Popular</div>
+                    <div class="mov-title">John Wick: Chapter 4</div>
+                    <div class="mov-des"> The High Table still hunting John Wick down. However he has uncovered away to gain his freedom back. But before gaining his freedom, he must fight new powerful foes, and even an old friend.</div>
+                    <button class="mov-but" onclick="choose(1)">Watch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trending -->
+
+    <div class="all-container" id="trending-container">
+
+
+    </div>
+    
+    <div class="mov-overlay" onclick="overlayClose()" id="mov-overlay">
+        <video class="mov-main" id="mov-main" controls>
+            <!-- <source src="Clip/Mov_Action_X men.mp4">  -->
+        <video>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer-container"> 
+        <div class="footer-mid">
+            <img src="Assets/Logo.png" class="footer-logo">
+            <div class="footer-bottom">
+                    <div class="footer-extra">
+                        <span>
+                           St. Imam Bonjol No.7, Cibodas, Tangerang, Banten 15138 
+                        </span>
+                        <span>
+                            +62 12345678912
+                        </span>
+                        <div class="footer-icon">
+                            <img src="Assets/footer icon.png" class="footer-icon-img">
+                        </div>
+                        <span id="copyright">
+                            Copyright 2023 © JeTFlix Inc. All rights reserved
+                        </span>
+                        
+                    </div>
+                    <div class="footer-col">
+                        <span>Profile</span>
+                        <span>Privacy</span>
+                        <span>Term of Service</span>
+                    </div>
+                    <div class="footer-col">
+                        <span>Help Center</span>
+                        <span>Jobs</span>
+                        <span>Legal Notices</span>
+                    </div>
+                    <div class="footer-col">
+                        <span>Media</span>
+                        <span>Websites</span>
+                        <span>Forum</span>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="navBar.js"></script>
+<script src="New & Popular.js"></script>
+    
+</body>
+</html>
